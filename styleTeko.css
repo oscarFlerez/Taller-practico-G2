@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: azure;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: darkred;
+    color: beige;
+}
+
+button:hover {
+    background-color: rgb(88, 5, 5);
+}
+
+.navegador{
+    display: flex;
+    font-family: fantasy;
+}
+
+.logo{
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.logo:nth-of-type(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ), url('Images/logoIcono.ico');
+}
+
+.nombre{
+    padding: 25px 200px 25px 0px;
+    font-family: Impact;
+}
+
+p{
+    padding: 25px;
+
+}
+
+.container{
+    max-width: 1400px;
+    margin: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+#sales {
+    text-align: center;
+    padding: 0px 400px;
+}
+
+div .divisor{
+    padding: 35px;
+}
+
+.imagen{
+    width: 270px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    background-color: grey;
+}
+
+#productos{
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    background-color: aqua;
+}
+
+.divisor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.divisor:nth-of-type(1) .imagen {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ), url('Images/Nintendo.jpg');
+}
+
+.divisor:nth-of-type(2) .imagen {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ), url('Images/VrHeadSet.jpg');
+}
+
+.divisor:nth-of-type(3) .imagen {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ), url('Images/PlayStation.jpg');
+}
+
+.divisor:nth-of-type(4) .imagen {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ), url('Images/Nintendo64.jpg');
+}
