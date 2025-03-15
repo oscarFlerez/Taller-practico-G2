@@ -9,11 +9,36 @@ body {
     font-style: normal;
 }
 
+.logo{
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.logo:nth-of-type(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ), url('Images/logoIcono.ico');
+}
+
+.nombre{
+    padding: 25px 200px 25px 0px;
+}
+
+p{
+    padding: 25px;
+}
 
 .container{
     max-width: 1400px;
-    margin: auto;
+    margin: 10px;
     justify-content: center;
+    display: flex;
 }
 
 #sales {
@@ -21,38 +46,61 @@ body {
     padding: 0px 400px;
 }
 
-div .carta {
-    text-align: center;
+div .divisor{
+    padding: 35px;
 }
 
-#productos .carta{
+.imagen{
+    width: 270px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    background-color: grey;
+}
+
+#productos{
     background-size: cover;
     background-position: center;
     padding: 50px;
-    border-radius: 15px;
-    margin: 20px;
+    background-color: aqua;
 }
 
-.carta:nth-child(1){
+.divisor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divisor:nth-of-type(1) .imagen {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.3)
-        ),url('Images/Nintendo.jpg');
+    ), url('Images/Nintendo.jpg');
 }
 
-.carta:nth-child(2){
+.divisor:nth-of-type(2) .imagen {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.3)
-    ),url('Images/PlayStation.jpg')
+    ), url('Images/VrHeadSet.jpg');
 }
 
-.carta:nth-child(3){
+.divisor:nth-of-type(3) .imagen {
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.3)
-    ),url('Images/VrHeadSet.jpg')
+    ), url('Images/PlayStation.jpg');
+}
+
+.divisor:nth-of-type(4) .imagen {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    ), url('Images/Nintendo64.jpg');
 }
